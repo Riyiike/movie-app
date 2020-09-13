@@ -1,4 +1,5 @@
 import React from 'react'
+import Result from "./Result"
 
 //destructure the props of relts function to {results}
 function Results({results}) {
