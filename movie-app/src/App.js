@@ -4,14 +4,17 @@ import './App.css';
 
 function App() {
 const [state , setState] = useState({
-
-})
+  s: "",
+  results: [],
+  selected: {}
+});
+const apiurl = "http://www.omdbapi.com/?apikey=dfe6d885";
 
   const handleInput = (e) => {
-    let s = e.target.value;
+    let sNew = e.target.value;
 
     setState(prevState => {
-      return { ...prevState, s: s}
+      return { ...prevState, s: sNew}
     });
 
   }
